@@ -10,7 +10,27 @@
 </head>
 <body>
     <h1>Video Playlist Player</h1>
+ <script>
+        function isInstalled(installed, uninstalled) {
+            let img = document.createElement('img');
+            img.onerror = uninstalled;
+            img.onload = installed;
+            img.src = 'chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/play-on.png';
+        }
 
+        isInstalled(
+            // Installed
+            () => {
+                // Your code when the extension is installed
+                alert('Extension is installed');
+            },
+            // Uninstalled
+            () => {
+                // Your code when the extension is uninstalled
+                alert('Extension is not installed');
+            }
+        );
+    </script>
     <video id="my-video" class="video-js" controls width="640" height="360">
         <source src="https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8" type="application/x-mpegURL">
         Your browser does not support the video tag.
