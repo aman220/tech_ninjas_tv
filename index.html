@@ -171,7 +171,7 @@
                 channelName.textContent = channel.name;
                 card.appendChild(channelName);
                 var link = document.createElement('a');
-                link.href = 'player.html?url=' + encodeURIComponent(channel.url);
+                link.href = channel.url;
                 link.textContent = 'Watch Now';
                 card.appendChild(link);
                 channelCards.appendChild(card);
