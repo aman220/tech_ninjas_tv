@@ -88,17 +88,13 @@
         <header>
             <h1>Tech Ninjas TV</h1>
         </header>
-
         <div class="card-list" id="channelCards"></div>
+        <div class="card-list" id="sonychannelCards"></div>
     </div>
-    <script>
-        !function(){var n=[/* ... */],o=document.getElementById("channelCards");n.forEach(function(n){var t=document.createElement("div");t.classList.add("card");var e=document.createElement("img");e.src=n.img,e.alt=n.name,e.style.width="100%",t.appendChild(e);var r=document.createElement("p");r.textContent=n.name,t.appendChild(r);var a=document.createElement("a");a.href="player.html?url="+encodeURIComponent(n.url),a.textContent="Watch Now",t.appendChild(a),o.appendChild(t)})}();
 
-    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var channelList = [
-                { name: 'Disney Channel', img: "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-1356-j5tdnwmw-v1/imageContent-1356-j5tdnwmw-m1.png", url: 'https://bpprod3linear.akamaized.net/bpk-tv/irdeto_com_Channel_166/output/manifest.mpd' },
                 { name: 'Zee TV', img: "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11073-j95e7nyo-v1/imageContent-11073-j95e7nyo-m1.png", url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeetv/default/index.m3u8' },
                 { name: 'Zee TV HD', img: "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-12077-j9ob4gm0-v2/imageContent-12077-j9ob4gm0-m2.png", url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeetvhd/default/index.m3u8' },
                 { name: '&TV', img: "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-12129-j9p7kluo-v2/imageContent-12129-j9p7kluo-m3.png", url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Andtv/default/index.m3u8' },
@@ -128,44 +124,76 @@
                 { name: 'Zee Cinemalu', img: "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-21307-je859sm0-v1/imageContent-21307-je859sm0-m2.png", url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeecinemalu/default/index.m3u8' },
                 { name: 'Zee Kannada', img: "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-33827-jo5kcr1c-v4/imageContent-33827-jo5kcr1c-m5.png", url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeekannada/default/index.m3€u8' },
                 { name: 'Zee Classic', img: "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-42199-jxh2zlj4-v1/imageContent-42199-jxh2zlj4-m1.png", url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeekannada/default/index.m3€u8' },
-                { name: 'Chudai', img: "https://assets.mycast.io/actor_images/actor-johnny-sins-75125_large.jpg?1586055334", url: 'https://live.redtraffic.net/interracial.m3u8' },
-                // Add more channels as needed
+                //<!-- { name: 'Chudai', img: "https://assets.mycast.io/actor_images/actor-johnny-sins-75125_large.jpg?1586055334", url: 'https://live.redtraffic.net/interracial.m3u8' }, -->
             ];
 
-            var channelCards = document.getElementById('channelCards');
+            var soneylist = [
+            { name: 'Disney Channel', img: "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-1356-j5tdnwmw-v1/imageContent-1356-j5tdnwmw-m1.png", url: 'test.html?id=114' },
+            { name: 'SET HD', img: "https://sonypicturesnetworks.com/images/logos/SET-LOGO-HD.png", url: 'test.html?id=15' },
+            { name: 'Sony SAB HD', img: "https://sonypicturesnetworks.com/images/logos/SONY%20SAB%20HD_WHITE.png", url: 'test.html?id=559' },
+            { name: 'Sony PAL', img: "https://sonypicturesnetworks.com/images/logos/SONY%20PAL.png", url: 'test.html?id=554' },
+            { name: 'Sony YAY', img: "https://sonypicturesnetworks.com/images/logos/SONY%20YAY.png", url: 'test.html?id=45' },
+            { name: 'Sony Marathi', img: "https://sonypicturesnetworks.com/images/logos/Sony_MARATHI.png", url: 'test.html?id=658' },
+            { name: 'Sony AATH', img: "https://sonypicturesnetworks.com/images/logos/SONY%20AATH.png", url: 'test.html?id=34'},
+            { name: 'Sony MAX HD', img: "https://sonypicturesnetworks.com/images/logos/Sony_MAX-HD_WHITE.png", url: 'test.html?id=80' },
+            { name: 'Sony MAX', img: "https://sonypicturesnetworks.com/images/logos/Sony_MAX.png", url: 'test.html?id=132' },
+            { name: 'Sony WAH', img: "https://sonypicturesnetworks.com/images/logos/Sony_WAH.png", url: 'test.html?id=56' },
+            { name: 'Sony MAX2', img: "https://sonypicturesnetworks.com/images/logos/Sony_MAX2.png", url: 'test.html?id=' },
+            { name: 'Sony PIX HD', img: "https://sonypicturesnetworks.com/images/logos/PIX%20HD_WHITE.png", url: 'test.html?id=' },
+            { name: 'Sony BBC Earth HD', img: "https://sonypicturesnetworks.com/images/logos/SBBCE_LOGO_NEW_PNG.png", url: 'test.html?id=460' },
+            { name: 'Sony TEN 1', img: "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen1_SD_Logo_CLR.png", url: 'test.html?id=' },
+            { name: 'Sony TEN 2', img: "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen2_SD_Logo_CLR.png", url: 'test.html?id=' },
+            { name: 'Sony TEN 3', img: "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen3_SD_Logo_CLR.png", url: 'test.html?id=' },
+            { name: 'Sony TEN 4', img: "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen4_SD_Logo_CLR.png", url: 'test.html?id=' },
+            { name: 'Sony TEN 5', img: "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen5_SD_Logo_CLR.png", url: 'test.html?id=' },
+            { name: 'Sony TEN 1 HD', img: "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen1_HD_Logo_CLR.png", url: 'test.html?id=' },
+            { name: 'Sony  TEN 2 HD', img: "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen2_HD_Logo_CLR.png", url: 'test.html?id=' },
+            { name: 'Sony TEN 3 HD', img: "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen3_HD_Logo_CLR.png", url: 'test.html?id=' },
+            { name: 'Sony TEN 4 HD', img: "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen4_HD_Logo_CLR.png", url: 'test.html?id=' },
+            { name: 'Sony TEN 5 HD', img: "https://sonypicturesnetworks.com/images/logos/SONY_SportsTen5_HD_Logo_CLR.png", url: 'test.html?id=35' },
+            { name: 'Star Gold HD', img: "https://tatalogo.pages.dev/632.png", url: 'test.html?id=245' },]
 
-            // Populate the channel cards
+            var channelCards = document.getElementById('channelCards');
             channelList.forEach(function (channel) {
                 var card = document.createElement('div');
                 card.classList.add('card');
-
-                // Create an image element
                 var img = document.createElement('img');
                 img.src = channel.img; // Set the image source
                 img.alt = channel.name; // Set alternative text for the image
                 img.style.width = '100%'; // Adjust the image width if needed
                 card.appendChild(img); // Append the image to the card
-
-                // Create a paragraph element for the channel name
                 var channelName = document.createElement('p');
                 channelName.textContent = channel.name;
                 card.appendChild(channelName);
-
-                //<!-- var channelUrl = document.createElement('p');
-                ////channelUrl.textContent = channel.url;
-                // card.appendChild(channelUrl); -->
-
                 var link = document.createElement('a');
                 link.href = 'player.html?url=' + encodeURIComponent(channel.url);
                 link.textContent = 'Watch Now';
                 card.appendChild(link);
+                channelCards.appendChild(card);
+            });
 
+            var channelCards = document.getElementById('sonychannelCards');
+            soneylist.forEach(function (channel) {
+                var card = document.createElement('div');
+                card.classList.add('card');
+                var img = document.createElement('img');
+                img.src = channel.img; // Set the image source
+                img.alt = channel.name; // Set alternative text for the image
+                img.style.width = '100%'; // Adjust the image width if needed
+                card.appendChild(img); // Append the image to the card
+                var channelName = document.createElement('p');
+                channelName.textContent = channel.name;
+                card.appendChild(channelName);
+                var link = document.createElement('a');
+                link.href = channel.url;
+                link.textContent = 'Watch Now';
+                card.appendChild(link);
                 channelCards.appendChild(card);
             });
         });
     </script>
     <!-- Obfuscated JavaScript code -->
-    
+
 
 </body>
 
