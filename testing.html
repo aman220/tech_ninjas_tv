@@ -3,47 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Playlist Player</title>
-    <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
-    <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
-    <script src="https://unpkg.com/videojs-http-streaming@2.10.8/dist/videojs-http-streaming.js"></script>
+    <title>M3U8 Playlist Player</title>
+    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/7.15.4/video.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 </head>
 <body>
-    <h1>Video Playlist Player</h1>
-    <script>
-        function isExtensionInstalled(installed, uninstalled) {
-            let img = document.createElement('img');
-            img.onerror = uninstalled;
-            img.onload = installed;
-            img.src = 'chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/play-on.png';
-        }
 
-        function playVideo() {
-            // Replace this with the logic to play the video
-            alert('Playing video');
-        }
+<video id="video" class="video-js vjs-default-skin" controls></video>
 
-        isExtensionInstalled(
-            // Installed
-            () => {
-                // Your code when the extension is installed
-                alert('Extension is installed');
-                playVideo(); // Play the video when the extension is detected
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Your M3U8 URL
+        const m3u8Url = 'https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8';
+
+        // Initialize video.js with hls.js support
+        const player = videojs('video', {
+            fluid: true,
+            html5: {
+                hls: {
+                    overrideNative: true, // Use hls.js even if native HLS is available
+                }
             },
-            // Uninstalled
-            () => {
-                // Your code when the extension is uninstalled
-                alert('Extension is not installed');
-            }
-        );
-    </script>
-    <video id="my-video" class="video-js" controls width="640" height="360">
-        <source src="https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8" type="application/x-mpegURL">
-        Your browser does not support the video tag.
-    </video>
+            sources: [{
+                src: m3u8Url,
+                type: 'application/x-mpegURL'
+            }]
+        });
 
-    <script>
-        var player = videojs('my-video');
-    </script>
+        // Event listener for when the video is ready
+        player.ready(function () {
+            console.log('Player is ready');
+        });
+
+        // Event listener for when an error occurs
+        player.on('error', function (e) {
+            console.error('Error:', e);
+        });
+    });
+</script>
+
 </body>
 </html>
