@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Playlist Player</title>
     <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
-    <script src="https://vjs.zencdn.net/7.14.3/video.js"></script> <!-- Corrected script tag -->
+    <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
     <script src="https://unpkg.com/videojs-http-streaming@2.10.8/dist/videojs-http-streaming.js"></script>
 </head>
 <body>
     <h1>Video Playlist Player</h1>
     <script>
-        function isInstalled(installed, uninstalled) {
+        function isExtensionInstalled(installed, uninstalled) {
             let img = document.createElement('img');
             img.onerror = uninstalled;
             img.onload = installed;
             img.src = 'chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/play-on.png';
         }
 
-        isInstalled(
+        function playVideo() {
+            // Replace this with the logic to play the video
+            alert('Playing video');
+        }
+
+        isExtensionInstalled(
             // Installed
             () => {
                 // Your code when the extension is installed
                 alert('Extension is installed');
+                playVideo(); // Play the video when the extension is detected
             },
             // Uninstalled
             () => {
