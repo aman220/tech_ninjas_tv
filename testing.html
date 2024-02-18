@@ -3,45 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M3U8 Playlist Player</title>
-    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet">
-    <script src="https://vjs.zencdn.net/7.15.4/video.js"></script>
+    <title>Video Player Example</title>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        video {
+            width: 80%;
+            max-width: 800px;
+        }
+    </style>
 </head>
 <body>
+    <video controls id="videoPlayer"></video>
 
-<video id="video" class="video-js vjs-default-skin" controls></video>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var video = document.getElementById('videoPlayer');
+            var videoSource = 'https://m3u8play.dev/?url=https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8';
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Your M3U8 URL
-        const m3u8Url = 'https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8';
-
-        // Initialize video.js with hls.js support
-        const player = videojs('video', {
-            fluid: true,
-            html5: {
-                hls: {
-                    overrideNative: true, // Use hls.js even if native HLS is available
-                }
-            },
-            sources: [{
-                src: m3u8Url,
-                type: 'application/x-mpegURL'
-            }]
+            if (Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(videoSource);
+                hls.attachMedia(video);
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = videoSource;
+            } else {
+                console.error('HLS not supported');
+            }
         });
-
-        // Event listener for when the video is ready
-        player.ready(function () {
-            console.log('Player is ready');
-        });
-
-        // Event listener for when an error occurs
-        player.on('error', function (e) {
-            console.error('Error:', e);
-        });
-    });
-</script>
-
+    </script>
 </body>
 </html>
