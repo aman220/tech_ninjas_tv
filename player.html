@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+
+<body>
+    <div class="video-player">
+        <video id="player" controls></video>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var player = document.getElementById('player');
+            var hls = new Hls();
+
+            // Get the playlist URL from the query parameters
+            var urlParams = new URLSearchParams(window.location.search);
+            var playlistUrl = urlParams.get('url');
+
+            if (playlistUrl) {
+                loadPlaylist(playlistUrl);
+            }
+
+            function loadPlaylist(url) {
+                if (Hls.isSupported()) {
+                    hls.loadSource(url);
+                    hls.attachMedia(player);
+                    player.play(); // Autoplay the video
+                } else if (player.canPlayType('application/vnd.apple.mpegurl')) {
+                    player.src = url;
+                    player.play(); // Autoplay the video
+                }
+
+                // Play in full screen after loading the playlist
+                player.requestFullscreen().catch(err => {
+                    console.log(`Error attempting to enable full-screen mode: ${err.message}`);
+                });
+            }
+        });
+    </script>
+
+    <style>
+        .video-player {
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        video {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</body>
+
+</html>
