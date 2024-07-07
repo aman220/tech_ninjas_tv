@@ -1,105 +1,66 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player</title>
-</head>
+    <title>Tech Ninjas TV - Player</title>
+    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
 
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-js {
+            width: 100%;
+            height: 100%;
+        }
+
+        .vjs-fullscreen {
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        /* Optional: Hide controls in full screen mode for a clean view */
+        .vjs-fullscreen .vjs-control-bar {
+            display: none;
+        }
+    </style>
+</head>
 <body>
-    <div class="video-player">
-        <video id="player" controls></video>
+    <div class="container">
+        <video id="my_video" class="video-js vjs-default-skin" controls preload="auto">
+            <source id="video_source" src="" type="application/x-mpegURL">
+        </video>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://unpkg.com/video.js/dist/video.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var player = document.getElementById('player');
-            var hls = new Hls();
+            const urlParams = new URLSearchParams(window.location.search);
+            const url = urlParams.get('url');
 
-            // Get the playlist ID from the query parameters
-            var urlParams = new URLSearchParams(window.location.search);
-            var playlistId = urlParams.get('id');
-
-            // Your channel list
-            var channelList = [
-            { url: 'https://prod-sports-hin.jiocinema.com/hls/live/2100323/hd_akamai_iosmob_avc_hin_ipl_s1_m1190524/master_1080p.m3u8', id: 1 },
-            { url: 'https://jcevents.jiocinema.com/bpk-tv/JC_ColorsCineplexBollywood/JCHLS/index.m3u8?hdnts=st=1720375698~exp=1720382898~acl=/*~id=cb2caa22d27b4562ba9e1871815ce362~data=rqId=e58cfe9f-77df-41bd-a772-958c3cd8141c~hmac=fc27de7c78442a51f5bb32ccd879100efecb7611fd35538a91f46fcf28ea70df&maxrate=3000000&ads.deviceid=d8630923-ff99-412e-bef2-ac5da2e87498&ads.dvb=lg&ads.device_model=nexus%205&ads.platform=mweb_android&ads.os=android&ads.avr=24.07.01.1-1f9889f1&ads.app_lang=Hindi&ads.country=IN&ads.state=Uttar%20Pradesh&ads.city=Mathura&ads.user_id=cb2caa22-d27b-4562-ba9e-1871815ce362&ads.user_subscription_state=true&ads.ctid=3845693&ads.content_title=Colors%20Cineplex%20Bollywood&ads.shnm=Colors%20Cineplex%20Bollywood&ads.tnid=3845693&ads.tnm=&ads.mtnm=Colors%20Cineplex%20Bollywood&ads.mtnumber=0&ads.episode_no=0&ads.gnr=Entertainment&ads.lang=Hindi&ads.feed_type=LIVECHANNEL&ads.video_type=LINEAR&ads.ip4=0.0.0.0&ads.ip6=0.0.0.0&ads.device_type=Mobile&ads.device_width=612&ads.device_height=803&ads.network_type=mobile&ads.network_carrier=NA&ads.subs_plan=premium&ads.pin_code=281406&ads.latitude=27.39&ads.longitude=77.9&ads.orientation=portrait&ads.is4k=false&ads.content_restriction_level=18&ads.screen_name=player&ads.lat=27.39&ads.asnname=&ads.external_creative_id=&ads.advertiser_id=&ads.mol_impression_id=&ads.chip_name=For%20You&ads.bnm=&ads.cohort_c1=GHOP&ads.maturity_rating=U&ads.sbu=JCIN', id: 2 },
-            { url: 'http://185.190.25.93:49893/ghLs2zdZSnFvTT00003b703a365d9c76222c81a9fb7660459e6ade686eee90e295b6070fd016/index.m3u8?token=86d16212a62a35947dc4332a29f32f48', id: 3 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Andtvhd/default/index.m3u8', id: 4 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeeanmol/default/index.m3u8', id: 5 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeecinema/default/index.m3u8', id: 6 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeecinemahd/default/index.m3u8', id: 7 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Andpictures/default/index.m3u8', id: 8 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Andpictureshd/default/index.m3u8', id: 9 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeebollywood/default/index.m3u8', id: 10 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeeaction/default/index.m3u8', id: 11 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeeanmolcinema/default/index.m3u8', id: 12 },
-            { url: 'https://prod-ent-live-gm.jiocinema.com/out/v1/82d7c37dc9ba4ad3ab7966194bee1385/master.m3u8', id: 13 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeehindustan/default/index.m3u8', id: 14 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeebusiness/default/index.m3u8', id: 15 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Wion/default/index.m3u8', id: 16 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zing/default/index.m3u8', id: 17 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeesalaam/default/index.m3u8', id: 18 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeemarathi/default/index.m3u8', id: 19 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeemarathihd/default/index.m3u8', id: 20 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeetalkies/default/index.m3u8', id: 21 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeetalkieshd/default/index.m3u8', id: 22 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeebangla/default/index.m3u8', id: 23 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeebanglahd/default/index.m3u8', id: 24 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeebanglacinema/default/index.m3u8', id: 25 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeetamil/default/index.m3u8', id: 26 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeecinemalu/default/index.m3u8', id: 27 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeekannada/default/index.m3€u8', id: 28 },
-            { url: 'https://d75dqofg5kmfk.cloudfront.net/bpk-tv/Zeekannada/default/index.m3€u8', id: 29 },
-            ];
-
-            // Find the channel with the specified ID
-            var selectedChannel = channelList.find(channel => channel.id == playlistId);
-
-            if (selectedChannel) {
-                var playlistUrl = selectedChannel.url;
-                loadPlaylist(playlistUrl);
-            }
-
-            function loadPlaylist(url) {
-                if (Hls.isSupported()) {
-                    hls.loadSource(url);
-                    hls.attachMedia(player);
-                } else if (player.canPlayType('application/vnd.apple.mpegurl')) {
-                    player.src = url;
-                }
-
-                // Play in full screen after loading the playlist
-                player.requestFullscreen().catch(err => {
-                    console.log(`Error attempting to enable full-screen mode: ${err.message}`);
+            if (url) {
+                const videoSource = document.getElementById('video_source');
+                videoSource.src = decodeURIComponent(url);
+                
+                var player = videojs('my_video');
+                player.ready(function() {
+                    console.log('Player is ready to use!');
+                    this.play();
                 });
+            } else {
+                console.error('No URL parameter provided.');
             }
         });
     </script>
-
-    <style>
-        .video-player {
-            margin-top: 20px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        video {
-            width: 100%;
-            display: block;
-        }
-    </style>
-
-    
-    <script src="/js/prodevs.js" defer></script>
-    <script disable-devtool-auto='true' src='https://cdn.jsdelivr.net/npm/disable-devtool' clear-log='true'
-        disable-select='true' disable-copy='true' disable-cut='true' disable-paste='true'></script>
-
-    <script src="https://cdn.jwplayer.com/libraries/SAHhwvZq.js"></script>
-    <script> jwplayer.defaults = jwDefaults; </script>
-                            
 </body>
-
 </html>
