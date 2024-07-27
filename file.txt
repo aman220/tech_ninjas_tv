@@ -1,253 +1,69 @@
 #EXTM3U
-#EXTM3U x-tvg-url="https://www.tsepg.cf/epg.xml.gz"
-#EXTM3U x-tvg-url="https://avkb.short.gy/jioepg.xml.gz"
+#EXTINF:-1 tvg-id="291" tvg-logo="https://images.slivcdn.com/videoasset_images/sethd_23oct_portrait_thumb_rev.jpg" group-title="Sony Liv",SET HD
+https://play.denver1769.in/set/index.php?id=sony-hd|User-Agent=Denver1769
 
+#EXTINF:-1 tvg-id="471" tvg-logo="https://images.slivcdn.com/videoasset_images/sony_sabhd_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony SAB HD
+https://play.denver1769.in/set/index.php?id=sony-sab-hd|User-Agent=Denver1769
 
+#EXTINF:-1 tvg-id="1146" tvg-logo="https://images.slivcdn.com/videoasset_images/sony_marathi_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony Marathi
+https://play.denver1769.in/set/index.php?id=sony-marathi|User-Agent=Denver1769
 
-#EXTINF:-1 tvg-id="438" group-title="Kids" tvg-language="hindi" tvg-logo="https://te.legra.ph/file/ef378060d0279dbbf2024.jpg",Animax
+#EXTINF:-1 tvg-id="474" tvg-logo="https://images.slivcdn.com/videoasset_images/sony_pal_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony PAL
+https://play.denver1769.in/set/index.php?id=sony-pal|User-Agent=Denver1769
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=816
-#EXTINF:-1 tvg-id="ts816" tvg-name="BBC Cbeebies" tvg-logo="https://i.postimg.cc/G2THVV0c/image.jpg" group-title="Denver KIDS PACK",BBC Cbeebies
-https://play.denver1769.in/tp2.mpd?id=816
+#EXTINF:-1 tvg-id="" tvg-logo="https://c.evidon.com/pub_logos/2796-2021122219404475.png" group-title="Sony Liv",Sony Kal
+https://spt-sonykal-1-us.lg.wurl.tv/playlist.m3u8|User-Agent=Denver1769
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=238
-#EXTINF:-1 tvg-id="ts238" tvg-name="Cartoon Network Hindi" tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,dpr_6.75,w_40/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11159-j99h64r4-v1/imageContent-11159-j99h64r4-m1.jpg" group-title="Denver KIDS PACK",Cartoon Network TP
-https://play.denver1769.in/tp2.mpd?id=238
+#EXTINF:-1 tvg-id="697" tvg-logo="https://images.slivcdn.com/videoasset_images/sony_aath_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony AATH
+https://play.denver1769.in/set/index.php?id=sony-aath|User-Agent=Denver1769
 
-#EXTINF:-1 tvg-id="ts238" tvg-name="Cartoon Network Hindi" tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,dpr_6.75,w_40/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11159-j99h64r4-v1/imageContent-11159-j99h64r4-m1.jpg" group-title="Denver KIDS PACK",Cartoon Network
-https://amg01448-samsungin-cartoonnw-samsungin-1y8kz.amagi.tv/playlist/amg01448-samsungin-cartoonnw-samsungin/playlist.m3u8
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=681
-#EXTINF:-1 tvg-id="ts681" tvg-name="CN HD+ English" tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,dpr_6.75,w_40/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-34162-jok06xoo-v1/imageContent-34162-jok06xoo-m1.jpg" group-title="Denver KIDS PACK",CN HD+
-https://play.denver1769.in/tp2.mpd?id=681
-
-#EXTINF:-1 tvg-id="1080" tvg-name="Chinttu TV" tvg-logo="https://i.postimg.cc/hPpjpTh4/6b8910e5b6c88b0bcfb1e.jpg" group-title="Denver KIDS PACK",Chinttu TV
-https://port.denver1769.in/oplx3.php?id=244720|User-Agent=XCIPTV-v5.0.1
-
-#EXTINF:-1 tvg-id="" tvg-name="Doraemon" tvg-logo="https://i.postimg.cc/DyXdcGcH/7-DC36-AA4-D033-BF987-A23-FB867319-F676600-B7-AAER.jpg" group-title="Denver KIDS PACK",Doraemon Live
-https://port.denver1769.in/Share2.php?id=147746|User-Agent=STARSHAREPlayer
-
-#EXTINF:-1 tvg-id="" tvg-name="Doraemon" tvg-logo="https://i.postimg.cc/DyXdcGcH/7-DC36-AA4-D033-BF987-A23-FB867319-F676600-B7-AAER.jpg" group-title="Denver KIDS PACK",Doraemon Live
-#EXTVLCOPT:http-user-agent=Dalvik/2.1.0
-http://port.denver1769.in/Ply/tptv.php?id=58634|User-Agent=XCIPTV-v5.0.1
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=119
-#EXTINF:-1 tvg-id="ts119" tvg-name="Discovery Kids 2" tvg-logo="https://i.postimg.cc/05L4JB97/image.png" group-title="Denver KIDS PACK",Discovery Kids
-https://play.denver1769.in/tp2.mpd?id=119
-
-#EXTINF:-1 tvg-id="ts119" tvg-name="Discovery Kids 2" tvg-logo="https://i.postimg.cc/05L4JB97/image.png" group-title="Denver KIDS PACK",Discovery Kids2
-https://denver1769.pages.dev/Discovery/discovery_kids_hindi.m3u8
-
-#EXTINF:-1 tvg-id="ts114" tvg-name="Disney" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c7/DIHDlogo.png" group-title="Denver KIDS PACK",DISNEY INTERNATIONAL HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://port.denver1769.in/j.php?tv=1110
-
-#EXTINF:-1 tvg-id="ts114" tvg-name="Disney" tvg-logo="https://i.postimg.cc/m2ngMRt8/5c883e1080e829997cf5d.jpg" group-title="Denver KIDS PACK",Disney HD
-http://port.denver1769.in/dd.php?tv=634
-
-#EXTINF:-1 tvg-id="ts114" tvg-name="Disney" tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,dpr_6.75,w_40/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-1357-j5tdnxeo-v1/imageContent-1357-j5tdnxeo-m1.jpg" group-title="Denver KIDS PACK",Disney Airtel
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://port.denver1769.in/dd.php?tv=864
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=114
-#EXTINF:-1 tvg-id="ts114" tvg-name="Disney" tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,dpr_6.75,w_40/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-1357-j5tdnxeo-v1/imageContent-1357-j5tdnxeo-m1.jpg" group-title="Denver KIDS PACK",Disney TATA
-https://play.denver1769.in/tp2.mpd?id=114
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=144
-#EXTINF:-1 tvg-id="ts144" tvg-name="Disney" tvg-logo="https://i.postimg.cc/d0xbNtcx/image.jpg" group-title="Denver KIDS PACK",Disney junior
-https://play.denver1769.in/tp2.mpd?id=144
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=905
-#EXTINF:-1 tvg-id="ts905" tvg-name="ETV Bal Bharat" tvg-logo="https://i.postimg.cc/c4kBnKR2/6d07a554a226b685e1c66.jpg" group-title="Denver KIDS PACK",ETV Bal Bharat
-https://play.denver1769.in/tp2.mpd?id=905
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=867
-#EXTINF:-1 tvg-id="ts867" tvg-logo="https://i.postimg.cc/W3Gg58dY/785a8ff955dc9944d5eee.jpg" group-title="Kids",Gubbare
-https://play.denver1769.in/tp2.mpd?id=867
-
-#EXTINFF:-1 tvg-id="ts345" tvg-name="Hungama" tvg-logo="https://i.postimg.cc/x1P4kGjQ/a56b504e91219a0121d8b.jpg" group-title="Denver KIDS PACK",Hungama opplex
-https://port.denver1769.in/oplx3.php?id=150480|User-Agent=XCIPTV-v5.0.1
-
-#EXTINFF:-1 tvg-id="ts345" tvg-name="Hungama" tvg-logo="https://i.postimg.cc/x1P4kGjQ/a56b504e91219a0121d8b.jpg" group-title="Denver KIDS PACK",Hungama mi20
-http://port.denver1769.in/ulpl2.php?tv=4019
-
-#EXTINFF:-1 tvg-id="ts345" tvg-name="Hungama" tvg-logo="https://i.postimg.cc/x1P4kGjQ/a56b504e91219a0121d8b.jpg" group-title="Denver KIDS PACK",Hungama TPTV
-http://port.denver1769.in/Ply/tptv.php?id=11646|User-Agent=XCIPTV-v5.0.1
-
-#EXTINFF:-1 tvg-id="ts345" tvg-name="Hungama" tvg-logo="https://i.postimg.cc/x1P4kGjQ/a56b504e91219a0121d8b.jpg" group-title="Denver KIDS PACK",Hungama jbe
-http://port.denver1769.in/j.php?tv=1094
-
-#EXTINFF:-1 tvg-id="ts345" tvg-name="Hungama" tvg-logo="https://i.postimg.cc/x1P4kGjQ/a56b504e91219a0121d8b.jpg" group-title="Denver KIDS PACK",Hungama DD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://port.denver1769.in/dd.php?tv=11305
-
-#EXTINFF:-1 tvg-id="ts345" tvg-name="Hungama" tvg-logo="https://i.postimg.cc/x1P4kGjQ/a56b504e91219a0121d8b.jpg" group-title="Denver KIDS PACK",Hungama jazz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://port.denver1769.in/jazz.php?tv=11305
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=138
-#EXTINF:-1 tvg-id="ts138" tvg-name="Nick Hindi" tvg-logo="https://i.postimg.cc/Wbx2Wv0z/b3f33e2be63b9b2bde6a4.jpg" group-title="Denver KIDS PACK",Nick
-https://play.denver1769.in/tp2.mpd?id=138
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=433
-#EXTINF:-1 tvg-id="ts433" tvg-name="Nick HD+" tvg-logo="https://i.postimg.cc/kgNkQ3ck/be78e6e78c44061f3d7b8.jpg" group-title="Denver KIDS PACK",Nick HD+
-https://play.denver1769.in/tp2.mpd?id=433
-
-#EXTINF:-1 tvg-id="1226" tvg-name="Nick HD+" tvg-logo="https://i.postimg.cc/kgNkQ3ck/be78e6e78c44061f3d7b8.jpg" group-title="Denver KIDS PACK",Nick HD+ Jio
-https://prod-ent-live-gm.jiocinema.com/bpk-tv/JC_NickHD/JCHLS/index.m3u8
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=118
-#EXTINF:-1 tvg-id="ts118" tvg-name="Nick Junior" tvg-logo="https://i.postimg.cc/GhmQ70dW/f4c79cad896cb60e10d08.jpg" group-title="Denver KIDS PACK",Nick Junior
-https://play.denver1769.in/tp2.mpd?id=118
-
-#EXTINF:-1 tvg-id="544" tvg-name="Nick Junior" tvg-logo="https://i.postimg.cc/GhmQ70dW/f4c79cad896cb60e10d08.jpg" group-title="Denver KIDS PACK",Nick Junior
-https://prod-ent-live-gm.jiocinema.com/bpk-tv/JC_NickJr/JCHLS/index.m3u8
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=fa65220c9f76e424173899df533a6d10:b4abbee95b69b3e80a0d141272c870db
-#EXTINF:-1 tvg-id="548" group-title="Jio Cinema" tvg-language="English" tvg-logo="https://v3img.voot.com/resizeMedium,w_450,h_253/v3Storage/assets/nick-hd-plus-live-channels-16x9-4-1642585145139.jpg",Nickelodeon Jr
-http://linearjitp-playback.astro.com.my/dash-wv/linear/9982/default.mpd
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=239
-#EXTINF:-1 tvg-id="ts239" tvg-name="Pogo Hindi" tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,dpr_6.75,w_40/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-2692-j638bugw-v1/imageContent-2692-j638bugw-m1.jpg" group-title="Denver KIDS PACK",Pogo
-https://play.denver1769.in/tp2.mpd?id=239
-
-#EXTINF:-1 tvg-id="" tvg-name="Shinchan" tvg-logo="https://i.postimg.cc/qv7BTsZZ/8595563419-F1424-D39-E80-D1-E97-ABCECCFB91-AD7-EW.jpg" group-title="Denver KIDS PACK",Shinchan Live
-https://port.denver1769.in/Share2.php?id=147724|User-Agent=STARSHAREPlayer
-
-#EXTINF:-1 tvg-id="" tvg-name="Shinchan" tvg-logo="https://i.postimg.cc/qv7BTsZZ/8595563419-F1424-D39-E80-D1-E97-ABCECCFB91-AD7-EW.jpg" group-title="Denver KIDS PACK",Shinchan Live
-http://port.denver1769.in/Ply/tptv.php?id=58625|User-Agent=XCIPTV-v5.0.1
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=127
-#EXTINF:-1 tvg-id="ts127" tvg-name="Sonic Hindi" tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,dpr_6.75,w_40/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-8019-j7a7nf68-v1/imageContent-8019-j7a7nf68-m1.jpg" group-title="Denver KIDS PACK",Sonic
-https://play.denver1769.in/tp2.mpd?id=127
-
-#EXTINF:-1 tvg-id="ts127" tvg-name="Sonic Hindi" tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,dpr_6.75,w_40/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-8019-j7a7nf68-v1/imageContent-8019-j7a7nf68-m1.jpg" group-title="Denver KIDS PACK",Sonic Hindi
-https://prod-ent-live-gm.jiocinema.com/bpk-tv/JC_SonicNick/JCHLS/index.m3u8
-
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=45
-#EXTINF:-1 tvg-id="ts45" tvg-name="Sony Yay Hindi" tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,dpr_6.75,w_40/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-130-j5fpedbs-v3/imageContent-130-j5fpedbs-m5.jpg" group-title="Denver KIDS PACK",Sony Yay
-https://play.denver1769.in/tp2.mpd?id=45
-
-#EXTINF:-1 tvg-id="ts45" tvg-name="Sony Yay Telugu" tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,dpr_6.75,w_40/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-130-j5fpedbs-v3/imageContent-130-j5fpedbs-m5.jpg" group-title="Denver KIDS PACK",Sony Yay Hindi
+#EXTINF:-1 tvg-id="872" tvg-logo="https://images.slivcdn.com/videoasset_images/sony_yay_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony YAY
 https://play.denver1769.in/set/index.php?id=sony-yay|User-Agent=Denver1769
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=587
-#EXTINFF:-1 tvg-id="ts587" tvg-name="Super Hungama" tvg-logo="https://i.postimg.cc/FHcDcy9z/image.jpg" group-title="Denver KIDS PACK",Super Hungama
-https://play.denver1769.in/tp2.mpd?id=587
+#EXTINF:-1 tvg-id="821" tvg-logo="https://images.slivcdn.com/videoasset_images/sony_bbchd_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony BBC Earth HD
+https://play.denver1769.in/set/index.php?id=sony-bbc-earth-hd|User-Agent=Denver1769
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=1363
-#EXTINF:-1 tvg-id="ts1363" tvg-logo="https://i.postimg.cc/yxmZRmmz/E39-B5-A6-B24-FE963-C033-BB72-E8993399-C32-E79-ACF1.jpg" group-title="Denver KIDS PACK",Tata Play Anime Local
-https://play.denver1769.in/tp2.mpd?id=1363
+#EXTINF:-1 tvg-id="476" tvg-logo="https://images.slivcdn.com/videoasset_images/sony_maxhd_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony MAX HD
+https://play.denver1769.in/set/index.php?id=sony-max-hd|User-Agent=Denver1769
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=627
-#EXTINF:-1 tvg-id="ts627" tvg-logo="https://i.postimg.cc/j5kzB2sB/d2c27d8a8be5a5ff67d9a.jpg" group-title="Denver KIDS PACK",Fun Learn Junior
-https://play.denver1769.in/tp2.mpd?id=627
+#EXTINF:-1 tvg-id="289" tvg-logo="https://images.slivcdn.com/videoasset_images/sony_max_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony MAX
+https://play.denver1769.in/set/index.php?id=sony-max|User-Agent=Denver1769
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=626
-#EXTINF:-1 tvg-id="ts626" tvg-logo="https://i.postimg.cc/fLF2nDZq/232912bb0ea37e7c61615.jpg" group-title="Denver KIDS PACK",Fun Learn Preschool
-https://play.denver1769.in/tp2.mpd?id=626
+#EXTINF:-1 tvg-id="483" tvg-logo="https://images.slivcdn.com/videoasset_images/sony_max2_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony MAX2
+https://play.denver1769.in/set/index.php?id=sony-max-2|User-Agent=Denver1769
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=994
-#EXTINF:-1 tvg-id="ts994" tvg-logo="https://i.postimg.cc/tJc4Y7fH/IMG-20240712-175104.jpg" group-title="Denver KIDS PACK",Tata Play Toons+
-https://play.denver1769.in/tp2.mpd?id=994
+#EXTINF:-1 tvg-id="762" tvg-logo="https://images.slivcdn.com/videoasset_images/sony_max2_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony PIX HD
+https://play.denver1769.in/set/index.php?id=sony-pix-hd|User-Agent=Denver1769
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=999
-#EXTINF:-1 tvg-id="ts999" tvg-logo="https://i.postimg.cc/tJc4Y7fH/IMG-20240712-175104.jpg" group-title="Denver KIDS PACK",Tata Play Toons+
-https://play.denver1769.in/tp2.mpd?id=999
+#EXTINF:-1 tvg-id="1393" tvg-logo="https://images.slivcdn.com/videoasset_images/sony_wah_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony WAH
+https://play.denver1769.in/set/index.php?id=sony-wah|User-Agent=Denver1769
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=995
-#EXTINF:-1 tvg-id="ts995" tvg-logo="https://i.postimg.cc/tJc4Y7fH/IMG-20240712-175104.jpg" group-title="Denver KIDS PACK",Tata Play Toons+
-https://play.denver1769.in/tp2.mpd?id=995
+#EXTINF:-1 tvg-id="514" tvg-logo="https://images.slivcdn.com/portrait_thumb/Sony_TEN1_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony TEN 1
+https://play.denver1769.in/set/index.php?id=sony-ten-1|User-Agent=Denver1769
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=996
-#EXTINF:-1 tvg-id="ts996" tvg-logo="https://i.postimg.cc/tJc4Y7fH/IMG-20240712-175104.jpg" group-title="Denver KIDS PACK",Tata Play Toons+
-https://play.denver1769.in/tp2.mpd?id=996
+#EXTINF:-1 tvg-id="523" tvg-logo="https://images.slivcdn.com/portrait_thumb/Sony_TEN2_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony TEN 2
+https://play.denver1769.in/set/index.php?id=sony-ten-2|User-Agent=Denver1769
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=997
-#EXTINF:-1 tvg-id="ts997" tvg-logo="https://i.postimg.cc/tJc4Y7fH/IMG-20240712-175104.jpg" group-title="Denver KIDS PACK",Tata Play Toons+
-https://play.denver1769.in/tp2.mpd?id=997
+#EXTINF:-1 tvg-id="524" tvg-logo="https://images.slivcdn.com/portrait_thumb/Sony_TEN3_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony TEN 3
+https://play.denver1769.in/set/index.php?id=sony-ten-3|User-Agent=Denver1769
 
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=https://play.denver1769.in/KeyLelo.php?id=998
-#EXTINF:-1 tvg-id="ts998" tvg-logo="https://i.postimg.cc/tJc4Y7fH/IMG-20240712-175104.jpg" group-title="Denver KIDS PACK",Tata Play Toons+
-https://play.denver1769.in/tp2.mpd?id=998
+#EXTINF:-1 tvg-id="1773" tvg-logo="https://images.slivcdn.com/portrait_thumb/Sony_TEN4_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony TEN 4
+https://play.denver1769.in/set/index.php?id=sony-ten-4|User-Agent=Denver1769
 
-#EXTINF:-1 tvg-id="58416" tvg-logo="https://i.postimg.cc/257X30rY/image.jpg" group-title="Denver KIDS PACK",BEN 10 ULTIMATE ALIEN
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://port.denver1769.in/j.php?tv=37756
+#EXTINF:-1 tvg-id="525" tvg-logo="https://images.slivcdn.com/portrait_thumb/Sony_TEN5_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony TEN 5
+https://play.denver1769.in/set/index.php?id=sony-ten-5|User-Agent=Denver1769
 
-#EXTINF:-1 tvg-id="58419" tvg-logo="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvwEJM_Dwo2EtMQ5BRc95cIYNXt3ib2BGjPMdv0qv97pnmT4w8zw2szqspCeYN36RGfwZdLsrKxQ3R6Tegq6LUiNl5_bbGgobKhIQMf_7N365qnBtklv_mLMMIqYzANBT2UNKceiEl1jo/s1280/OV.jpg" group-title="Denver KIDS PACK",BEN 10 OMNIVERSE
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://port.denver1769.in/j.php?tv=37734
+#EXTINF:-1 tvg-id="162" tvg-logo="https://images.slivcdn.com/portrait_thumb/Sony_TEN1HD_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony TEN 1 HD
+https://play.denver1769.in/set/index.php?id=sony-ten-1-hd|User-Agent=Denver1769
 
-#EXTINF:-1 tvg-id="58426" tvg-logo="https://i.postimg.cc/m2y1n2FZ/image.jpg" group-title="Denver KIDS PACK",BEN 10 CLASSIC
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://port.denver1769.in/j.php?tv=37745
+#EXTINF:-1 tvg-id="891" tvg-logo="https://images.slivcdn.com/portrait_thumb/Sony_TEN2HD_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony TEN 2 HD
+https://play.denver1769.in/set/index.php?id=sony-ten-2-hd|User-Agent=Denver1769
 
-#EXTINF:-1 tvg-id="63206" tvg-logo="https://i.postimg.cc/JhYBr61s/image.jpg" group-title="Denver KIDS PACK",Little BEN 10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://port.denver1769.in/j.php?tv=37712
+#EXTINF:-1 tvg-id="892" tvg-logo="https://images.slivcdn.com/portrait_thumb/Sony_TEN3HD_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony TEN 3 HD
+https://play.denver1769.in/set/index.php?id=sony-ten-3-hd|User-Agent=Denver1769
 
-#EXTINF:-1 tvg-id="58422" tvg-logo="https://i.postimg.cc/h4dKvySH/image.jpg" group-title="Denver KIDS PACK",BEN 10 ALIEN FORCE HINDI
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-http://port.denver1769.in/j.php?tv=37723
+#EXTINF:-1 tvg-id="1772" tvg-logo="https://images.slivcdn.com/portrait_thumb/Sony_TEN4HD_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony TEN 4 HD
+https://play.denver1769.in/set/index.php?id=sony-ten-4-hd|User-Agent=Denver1769
 
-#EXTINF:-1 tvg-id="" tvg-name="24/7 Chacha Bhatija" tvg-logo="https://i.postimg.cc/PJx3LFD0/image.jpg" group-title="Denver KIDS PACK",Chacha Bhatija
-https://port.denver1769.in/oplx3.php?id=311774|User-Agent=XCIPTV-v5.0.1
-
-#EXTINF:-1 tvg-id="" tvg-name="24/7 Chhota Bheem" tvg-logo="https://jiotvimages.cdn.jio.com/imagespublic/23/22/1522853443958_1522853804282_l_medium.jpg" group-title="Denver KIDS PACK",Chhota Bheem
-https://port.denver1769.in/oplx3.php?id=315401|User-Agent=XCIPTV-v5.0.1
-
-#EXTINF:-1 tvg-id="" tvg-name="24/7 MOTU PATLU 01" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/2024-07-11/240711545015.jpg" group-title="Denver KIDS PACK",MOTU PATLU
-https://port.denver1769.in/oplx3.php?id=307079|User-Agent=XCIPTV-v5.0.1
-
-#EXTINF:-1 tvg-id="311373" tvg-name="24/7 MOTU PATLU 02" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/2024-07-11/240711545015.jpg" group-title="Denver KIDS PACK",MOTU PATLU 2
-https://port.denver1769.in/oplx3.php?id=311373|User-Agent=XCIPTV-v5.0.1
-
-#EXTINF:-1 tvg-id="59791" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/2024-07-12/240712872102.jpg" group-title="Denver KIDS PACK",OGGY & THE COCKROACHES
-https://port.denver1769.in/oplx3.php?id=308282|User-Agent=XCIPTV-v5.0.1
-
-#EXTINF:-1 tvg-id="59791" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/2024-07-12/240712872102.jpg" group-title="Denver KIDS PACK",OGGY & THE COCKROACHES
-http://port.denver1769.in/Ply/tptv.php?id=59997|User-Agent=XCIPTV-v5.0.1
-
-#EXTINF:-1 tvg-id="59791" tvg-logo="https://i.postimg.cc/RCPGkrpw/Screenshot-2024-07-12-17-42-38-11-40deb401b9ffe8e1df2f1cc5ba480b12.jpg" group-title="Denver KIDS PACK",Perman
-https://port.denver1769.in/Share2.php?id=147736|User-Agent=STARSHAREPlayer
-
-#EXTINF:-1 tvg-id="58248" tvg-logo="https://i.postimg.cc/xCwD5D2D/image.jpg" group-title="Denver KIDS PACK",POKEMON
-http://port.denver1769.in/dd.php?tv=13409
-
-#EXTINF:-1 tvg-id="" tvg-name="24/7 SHIVA" tvg-logo="https://i.postimg.cc/4y3r5fK3/image.jpg" group-title="Denver KIDS PACK",SHIVA
-https://port.denver1769.in/oplx3.php?id=342074|User-Agent=XCIPTV-v5.0.1
-
-#EXTINF:-1 tvg-id="" tvg-name="24/7 Vir The Robot Boy" tvg-logo="https://i.postimg.cc/Vkr9yxyH/image.jpg" group-title="Denver KIDS PACK",Vir The Robot Boy
-https://port.denver1769.in/oplx3.php?id=314754|User-Agent=XCIPTV-v5.0.1
-
-#EXTINF:-1 tvg-id="58248" tvg-logo="https://i.postimg.cc/jS4frtgc/image.jpg" group-title="Denver KIDS PACK",Tom And Jerry
-http://port.denver1769.in/Ply/tptv.php?id=16927
-
-#EXTINF:-1 tvg-id="" tvg-name="24/7 Tom & Jerry" tvg-logo="https://i.postimg.cc/jS4frtgc/image.jpg" group-title="Denver KIDS PACK",Tom & Jerry
-https://port.denver1769.in/oplx3.php?id=329247|User-Agent=XCIPTV-v5.0.1
+#EXTINF:-1 tvg-id="155" tvg-logo="https://images.slivcdn.com/portrait_thumb/Sony_TEN5HD_23oct_portrait_thumb.jpg" group-title="Sony Liv",Sony TEN 5 HD
+https://play.denver1769.in/set/index.php?id=sony-ten-5-hd|User-Agent=Denver1769
