@@ -1,53 +1,5 @@
 #EXTM3U
 
-#EXTM3U
-
-#EXTINF:-1 ,Ben 10
-http://port.denver1769.in/jbe7.m3u8?tv=37723
-
-#EXTINF:-1 ,&TV HD
-https://la.drmlive.au/tp/zee.php?id=andtvhd
-
-#EXTINF:-1 ,&Xplor HD
-https://la.drmlive.au/tp/zee.php?id=andxplorehd
-
-#EXTINF:-1 ,&Pictures HD
-https://la.drmlive.au/tp/zee.php?id=andpictureshd
-
-#EXTINF:-1 ,Zee Cinema HD
-https://la.drmlive.au/tp/zee.php?id=cinemahd
-
-#EXTINF:-1 ,&Flix HD
-https://la.drmlive.au/tp/zee.php?id=andflixhd
-
-#EXTINF:-1 ,Zee Zest HD
-https://la.drmlive.au/tp/zee.php?id=zesthd
-
-#EXTINF:-1 ,Big Magic
-https://la.drmlive.au/tp/zee.php?id=bigmagic
-
-#EXTINF:-1 ,&Privé HD
-https://la.drmlive.au/tp/zee.php?id=privehd
-
-#EXTINF:-1 ,Zee Action
-https://la.drmlive.au/tp/zee.php?id=action
-
-#EXTINF:-1 ,Zee Bollywood
-https://la.drmlive.au/tp/zee.php?id=bollywood
-
-#EXTINF:-1 ,Zee Anmol Cinema
-https://la.drmlive.au/tp/zee.php?id=anmolcinema
-
-#EXTINF:-1 ,Zee Cafe HD
-https://la.drmlive.au/tp/zee.php?id=cafehd
-
-#EXTINF:-1 ,Zee Anmol
-https://la.drmlive.au/tp/zee.php?id=anmol
-
-
-#EXTINF:-1 ,Zee Punjabi
-https://la.drmlive.au/tp/zee.php?id=punjabi
-
 #EXTINF: -1,Zee Tamil 
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeetamil1/default/zeetamil1.m3u8
 #EXTINF: -1,Zee Cinema
