@@ -1,63 +1,51 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11073-j95e7nyo-v1/imageContent-11073-j95e7nyo-m1.png" group-title="zee",Ben 10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTM3U
+
+#EXTINF:-1 ,Ben 10
 http://port.denver1769.in/jbe7.m3u8?tv=37723
 
-#EXTINF:-1 tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-117-j5fl7440-v1/imageContent-117-j5fl7440-m1.png" group-title="zee",&TV HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,&TV HD
 https://la.drmlive.au/tp/zee.php?id=andtvhd
 
-#EXTINF:-1 tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/XPOHD_Thumbnail-v1/XPOHD_Thumbnail.png" group-title="zee",&Xplor HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,&Xplor HD
 https://la.drmlive.au/tp/zee.php?id=andxplorehd
 
-#EXTINF:-1 tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11173-j9hth720-v1/imageContent-11173-j9hth720-m1.png" group-title="zee",&Pictures HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,&Pictures HD
 https://la.drmlive.au/tp/zee.php?id=andpictureshd
 
-#EXTINF:-1 tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11915-j9l5clzs-v1/imageContent-11915-j9l5clzs-m1.png" group-title="zee",Zee Cinema HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,Zee Cinema HD
 https://la.drmlive.au/tp/zee.php?id=cinemahd
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/12/%26flix_logo.png" group-title="Movies",&Flix HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,&Flix HD
 https://la.drmlive.au/tp/zee.php?id=andflixhd
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/0/0b/Zee_Zest_logo.jpeg" group-title="zee",Zee Zest HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,Zee Zest HD
 https://la.drmlive.au/tp/zee.php?id=zesthd
 
-#EXTINF:-1 tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11266-j9j2spmg-v1/imageContent-11266-j9j2spmg-m1.png" group-title="zee",Big Magic
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,Big Magic
 https://la.drmlive.au/tp/zee.php?id=bigmagic
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/%26priv%C3%A9_HD.svg/2880px-%26priv%C3%A9_HD.svg.png" group-title="zee",&Privé HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,&Privé HD
 https://la.drmlive.au/tp/zee.php?id=privehd
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/a/a4/Zee_Action_2023_logo.png" group-title="zee",Zee Action
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,Zee Action
 https://la.drmlive.au/tp/zee.php?id=action
 
-#EXTINF:-1 tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-31233-jli1wlvc-v1/imageContent-31233-jli1wlvc-m1.png" group-title="zee",Zee Bollywood
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,Zee Bollywood
 https://la.drmlive.au/tp/zee.php?id=bollywood
 
-#EXTINF:-1 tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11090-j95hdh6o-v1/imageContent-11090-j95hdh6o-m1.png" group-title="zee",Zee Anmol Cinema
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,Zee Anmol Cinema
 https://la.drmlive.au/tp/zee.php?id=anmolcinema
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/1/14/Zee_Caf%C3%A9_2011_logo.png" group-title="zee",Zee Cafe HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,Zee Cafe HD
 https://la.drmlive.au/tp/zee.php?id=cafehd
 
-#EXTINF:-1 tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-11969-j9luigc0-v2/imageContent-11969-j9luigc0-m2.png" group-title="zee",Zee Anmol
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+#EXTINF:-1 ,Zee Anmol
 https://la.drmlive.au/tp/zee.php?id=anmol
 
-#EXTINF:-1 tvg-logo="https://mediaready.videoready.tv/tatasky-epg/image/fetch/f_auto,fl_lossy,q_auto,h_250,w_250/https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-49009-k5g6nid4-v1/imageContent-49009-k5g6nid4-m1.png" group-title="zee",Zee Punjabi
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
+
+#EXTINF:-1 ,Zee Punjabi
 https://la.drmlive.au/tp/zee.php?id=punjabi
 
 #EXTINF: -1,Zee Tamil 
