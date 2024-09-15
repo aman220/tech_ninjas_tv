@@ -33,13 +33,44 @@
         .vjs-fullscreen .vjs-control-bar {
             display: none;
         }
+
+        /* Stretch video controls */
+        .vjs-stretch-toggle {
+            font-size: 14px;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .vjs-aspect-ratio-control {
+            font-size: 14px;
+            cursor: pointer;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <video id="my_video" class="video-js vjs-default-skin" controls preload="auto">
-            <source id="video_source" src="" type="application/x-mpegURL">
+            <!-- The correct MIME types for each format -->
+            <source id="video_source" src="" type="video/mp4">
+            <source id="video_source_m3u8" src="" type="application/x-mpegURL">
+            <source id="video_source_mkv" src="" type="video/x-matroska">
+            <source id="audio_source" src="" type="audio/mp3">
+            <source id="video_source_ts" src="" type="video/MP2T">
         </video>
+        
+        <!-- Custom Controls -->
+        <div class="video-controls">
+            <button id="stretch_toggle" class="vjs-stretch-toggle">Stretch</button>
+            <button id="aspect_ratio_toggle" class="vjs-aspect-ratio-control">Aspect Ratio: 16:9</button>
+            <label for="playback_speed">Speed:</label>
+            <select id="playback_speed">
+                <option value="0.5">0.5x</option>
+                <option value="1" selected>1x</option>
+                <option value="1.5">1.5x</option>
+                <option value="2">2x</option>
+            </select>
+        </div>
     </div>
 
     <script src="https://unpkg.com/video.js/dist/video.js"></script>
@@ -50,12 +81,67 @@
 
             if (url) {
                 const videoSource = document.getElementById('video_source');
-                videoSource.src = decodeURIComponent(url);
+                const videoSourceM3U8 = document.getElementById('video_source_m3u8');
+                const videoSourceMKV = document.getElementById('video_source_mkv');
+                const audioSource = document.getElementById('audio_source');
+                const videoSourceTS = document.getElementById('video_source_ts');
+
+                // Set the correct source based on the file extension
+                const fileExtension = url.split('.').pop();
                 
+                switch (fileExtension) {
+                    case 'm3u':
+                    case 'm3u8':
+                        videoSourceM3U8.src = decodeURIComponent(url);
+                        break;
+                    case 'mkv':
+                        videoSourceMKV.src = decodeURIComponent(url);
+                        break;
+                    case 'mp3':
+                        audioSource.src = decodeURIComponent(url);
+                        break;
+                    case 'mp4':
+                        videoSource.src = decodeURIComponent(url);
+                        break;
+                    case 'ts':
+                        videoSourceTS.src = decodeURIComponent(url);
+                        break;
+                    default:
+                        console.error('Unsupported format');
+                        break;
+                }
+
                 var player = videojs('my_video');
                 player.ready(function() {
                     console.log('Player is ready to use!');
                     this.play();
+                });
+
+                // Custom Controls for Stretching and Aspect Ratio
+                let isStretched = false;
+                let aspectRatio = '16:9';
+
+                // Stretch toggle functionality
+                const stretchButton = document.getElementById('stretch_toggle');
+                stretchButton.addEventListener('click', function() {
+                    isStretched = !isStretched;
+                    player.hasClass('vjs-stretched') 
+                        ? player.removeClass('vjs-stretched')
+                        : player.addClass('vjs-stretched');
+                });
+
+                // Aspect Ratio toggle functionality
+                const aspectButton = document.getElementById('aspect_ratio_toggle');
+                aspectButton.addEventListener('click', function() {
+                    aspectRatio = aspectRatio === '16:9' ? '4:3' : '16:9';
+                    player.aspectRatio(aspectRatio);
+                    aspectButton.textContent = `Aspect Ratio: ${aspectRatio}`;
+                });
+
+                // Playback Speed control
+                const speedControl = document.getElementById('playback_speed');
+                speedControl.addEventListener('change', function() {
+                    player.playbackRate(this.value);
                 });
             } else {
                 console.error('No URL parameter provided.');
