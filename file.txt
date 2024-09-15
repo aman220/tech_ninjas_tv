@@ -586,7 +586,7 @@ https://aasthaott.akamaized.net/110923/smil:bhajan.smil/chunklist_b264000.m3u8
 
 
 #EXTINF:-1 tvg-id="" tvg-name="Doraemon S18 E01" tvg-logo="http://starshare.live:8080/images/75fdefae756bdd5b1863f25616f1e7cf.jpg" group-title=" DISNEY+HOTSTAR",Doraemon S18 E01
-http://starshare.live:8080/series/3454/3454/109052.mkv
+http://starshare.live:8080/movie/3454/3454/66222.mp4
 #EXTINF:-1 tvg-id="" tvg-name="Doraemon S18 E02" tvg-logo="http://starshare.live:8080/images/75fdefae756bdd5b1863f25616f1e7cf.jpg" group-title=" DISNEY+HOTSTAR",Doraemon S18 E02
 http://starshare.live:8080/series/3454/3454/109053.mkv
 #EXTINF:-1 tvg-id="" tvg-name="Doraemon S18 E03" tvg-logo="http://starshare.live:8080/images/75fdefae756bdd5b1863f25616f1e7cf.jpg" group-title=" DISNEY+HOTSTAR",Doraemon S18 E03
