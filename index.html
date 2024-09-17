@@ -150,6 +150,7 @@
 
                         const img = document.createElement('img');
                         img.src = channel.logo || 'https://kaspiunique.com/Temp/images%20(1).png'; // Use channel logo if available, otherwise fallback image
+                        img.loading = 'lazy';
                         img.onerror = function() {
                             this.src = 'https://kaspiunique.com/Temp/images%20(1).png'; // Fallback image in case of error loading the logo
                         };
