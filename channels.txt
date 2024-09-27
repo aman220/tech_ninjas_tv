@@ -1,4 +1,12 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="zeecinemahdplusone.in" tvg-name="IN: Zee Cinema HD +1" tvg-logo="" group-title="INDIA HINDI MOVIES",IN: Zee Cinema HD +1
+http://starshare.live:8080/live/3454/3454/380449.ts
+#EXTINF:-1 tvg-id="" tvg-name="Tata Play Zindgi" tvg-logo="https://www.lyngsat.com/logo/tv/zz/zee_zindagi_in.png" group-title="INDIAN ACTIVE",Tata Play Zindgi
+http://starshare.live:8080/live/3454/3454/108882.ts
+#EXTINF:-1 tvg-id="" tvg-name="Tata Play Hits " tvg-logo="" group-title="INDIAN ACTIVE",Tata Play Hits
+http://starshare.live:8080/live/3454/3454/108881.ts
+#EXTINF:-1 tvg-id="" tvg-name="Tata Play Fitness" tvg-logo="" group-title="INDIAN ACTIVE",Tata Play Fitness
+http://starshare.live:8080/live/3454/3454/108880.ts
 #EXTINF:-1 group-title="Zee" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Zee_TV.png", Zee TV
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/Zeetv1/default/master.m3u8
 #EXTINF:-1 group-title="Zee" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Zee_TV_HD.png", Zee TV HD
